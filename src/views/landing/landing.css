@@ -1,0 +1,111 @@
+
+.info{
+    margin-left: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container{
+    display: flex;
+    background-color: #FB6A3E;
+    height: 100vh ;
+}
+@media (max-width: 960px) {
+  .container{
+    height: 100%;
+    flex-direction: column;
+  }
+  .info{
+      margin-left: 1%;
+      margin-bottom: 10%;
+      width: 100%;
+  }
+  .text{
+      width: 100% !important;
+      
+  }
+  .img_{
+      width: auto;
+      
+  }
+  #img{
+      width: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+    #img{
+        width: 200px;
+    }
+
+}
+.img_{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.ball{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+    border-radius: 50%;
+    border: 2px solid black;
+    
+    margin: 0 auto;
+    
+    
+}
+hr{
+    width: 100%;
+    color: black;
+    background-color: black;
+}
+
+span{
+    position: relative;
+    background-color: black;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    left: 10px;
+}
+
+.text{
+
+    color: white;
+    width: 80%;
+    text-align: left;
+}
+
+.buttons{
+    
+    width: 10%;
+    
+}
+
+button{
+    background-color: yellow;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(216, 216, 4)
+}

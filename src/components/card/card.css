@@ -1,0 +1,48 @@
+.card{
+    background-color:red;
+    width:210px;
+    height:300px;
+    padding: 2%;
+    border-radius: 6%;
+}
+
+.card_section_main{
+    background-color: black;
+    height: 70%;
+    border-radius: 5%;
+    border: 1px solid white;
+
+}
+.card_section_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 25%;
+    border-radius: 1%;
+    margin-top: 2px;
+    border: 1px solid black;
+    overflow-x: auto;
+    
+}
+
+.card_img_container{
+    background-color: aliceblue;
+    width: 100px;
+    margin-top: 20px !important;
+    margin: 0 auto;
+}
+
+.card_text{
+    color: yellow;
+}
+
+.card_button_wrapper{
+    position: relative;
+    top: 5%;
+}
+
+.link{
+    font-style: none;
+    text-decoration: none;
+}
