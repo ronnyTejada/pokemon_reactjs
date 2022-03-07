@@ -9,18 +9,18 @@ const PokeGrid = () => {
   const [pokemons, setPokemons] = useState([]);
   const [favoritesPokemons, setFavoritesPokemons] = useState([]);
   const [pokemonWanted, setPokemonWanted] = useState([]);
-
   const [suggestions, setSuggestions] = useState([])
+  
   const [offset, setOffset] = useState(0)
   const [limit, setLimit] = useState(30)
 
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState('all')
+  
   const [from,setFrom] = useState(0)
   const [to, setTo] = useState(30)
 
   useEffect( () => {
-  //  setPokemons([])
     const  getPokemonData=async()=>{
       await axios
       .get(`https://pokeapi.co/api/v2/pokemon/?offset=${0}&limit=${1126}`)
@@ -71,14 +71,14 @@ const PokeGrid = () => {
   }
 
   const handleSearch=(text)=>{
-    let sug = []
+    let suggestionsAux = []
     if(filter==='all'){
-       sug =pokemons.filter(pkm=>pkm.name.includes(text))
+       suggestionsAux =pokemons.filter(pkm=>pkm.name.includes(text))
     }else{
-       sug =favoritesPokemons.filter(pkm=>pkm.name.includes(text))
+       suggestionsAux =favoritesPokemons.filter(pkm=>pkm.name.includes(text))
     }
     setSearch(text)
-    setSuggestions(sug)
+    setSuggestions(suggestionsAux)
     if(text === ''){
       setSuggestions([])
     }

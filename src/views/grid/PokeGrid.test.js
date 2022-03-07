@@ -5,7 +5,6 @@ import PokeGrid from './PokeGrid'
 import { shallow, configure } from 'enzyme';
 import { Button } from "../../components/styled_components/styled";
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
-import PokemonCard from "../../components/card/PokemonCard";
 
 configure({adapter: new Adapter()})
 describe('PokeGrid',()=>{

@@ -5,9 +5,9 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 
-const PokemonCard = ({ pokemon, setFavoritesPokemons, setRender }) => {
+const PokemonCard = ({ pokemon, setFavoritesPokemons }) => {
   const [show, setShow] = useState(true);
-  const [current,setCurrent] = useState(pokemon)
+  
   const handleLike = (pokemon) => {
     const notify = (name) =>
       toast(name + " to favorite", { position: "bottom-right" });
@@ -27,8 +27,6 @@ const PokemonCard = ({ pokemon, setFavoritesPokemons, setRender }) => {
       currents.filter((pkm) => pkm.id !== pokemon.id)
     );
   };
-
-//  console.log(pokemon,'dddddddddddddddddd')
 
   return (
     <>

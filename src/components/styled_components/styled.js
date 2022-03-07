@@ -40,7 +40,8 @@ export const Loader = styled.div`
 export const Input = styled.input`
   height: 30px;
   margin:0 auto;
-  margin-bottom:5px !important;
+  margin-top:5px;
+  margin-bottom:10px !important;
   @media (max-width: 234px) {
     width:100%
   }
@@ -72,6 +73,8 @@ export const List_Item = styled.li`
 
   border-bottom:1px solid black;
   padding:5px;
-
+  &hover:{
+    background-color:red;
+  }
 
 `
