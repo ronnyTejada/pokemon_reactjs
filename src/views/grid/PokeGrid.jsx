@@ -95,7 +95,7 @@ const PokeGrid = () => {
       setPokemonWanted(pkm)
 
     }
-    console.log(pokemonWanted)
+
   }
 
 
