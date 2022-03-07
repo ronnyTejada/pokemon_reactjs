@@ -33,6 +33,7 @@ const Pokedex = () => {
     <>
       {pokemon!==null ?
         <div className="pokedex">
+          <Button style={{margin:'0 auto',position:'absolute',top:'0%',right:'50%'}}>To grid</Button>
           <div className="pokedex_main">
             
             <div className="img">
@@ -58,14 +59,14 @@ const Pokedex = () => {
               }
             </div>
           </div>
-          <Link to={'/pokegrid'}> <Button style={{margin:'0 auto',position:'relative',top:'140px'}}>To grid</Button></Link>
+          <Link to={'/pokegrid'}> </Link>
 
           <div className="pokedex_description">
               <div className="description_wrapper">
                 
                  <p>{pokemon.flavor_text}  </p>
               </div>
-            
+          
             
           </div>
         </div>

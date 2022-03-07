@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState,createContext, useContext } from "react";
+import React, { useEffect, useState} from "react";
 import PokemonCard from "../../components/card/PokemonCard";
 import { Button, Loader, Input, Filter,Wrapper } from "../../components/styled_components/styled";
 import Suggestions from "../../components/suggestions/Suggestions";
